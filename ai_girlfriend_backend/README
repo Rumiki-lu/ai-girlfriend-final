@@ -1,0 +1,7 @@
+执行此工程所需要的python包
+pip install -r requirements.txt
+
+
+每次修改后需要重新包才可以直接执行exe文件
+在根目录执行如下打包命令
+pyinstaller --name "AIGirlfriend" --onefile --console --add-data "dist:dist" --collect-all "uvicorn" --collect-all "requests" run_server.py
